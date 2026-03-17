@@ -5,7 +5,7 @@ const GamePage = lazy(() => import('./pages/GamePage').then((m) => ({ default: m
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Suspense fallback={<div className="loading">Laden…</div>}>
         <Routes>
           <Route path="/" element={<Navigate to="/orte" replace />} />

@@ -75,7 +75,11 @@ export function GamePage() {
 
       <Toolbar
         config={config}
-        modePath={`/${validMode}`}
+        modePath={
+          import.meta.env.BASE_URL === './' || !import.meta.env.BASE_URL
+            ? `/${validMode}`
+            : `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${validMode}`
+        }
         subheading={subheading}
         seedFromURL={seedFromURL}
         dayFromURL={dayFromURL}
