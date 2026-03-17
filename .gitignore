@@ -1,0 +1,46 @@
+# Daten (optional, projektspezifisch)
+data/orte_ooe.json
+
+# Dependencies
+node_modules/
+app/node_modules/
+
+# Build-Ausgabe
+dist/
+app/dist/
+
+# Umgebungsvariablen
+.env
+.env.local
+.env.*.local
+
+# Logs und Caches
+*.log
+npm-debug.log*
+.npm
+.cache/
+.vite/
+app/.vite/
+*.tsbuildinfo
+app/*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Test / Coverage (falls später genutzt)
+coverage/
+.nyc_output/
+
+# Temporäre Dateien
+*.tmp
+*.temp
+.tmp/
+.temp/
